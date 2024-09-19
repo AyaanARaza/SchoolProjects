@@ -1,0 +1,40 @@
+.main_header {
+    background-color: #4D6E41;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_header img {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 75px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.fit {
+    margin-top: 20px;
+    margin-left: 22%;
+
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #679356;   
+}
+
+body.pushable>.pusher {
+    background: #679356;
+  }
+
+dt{
+    font-size: 22px;
+    font-weight: bold;
+}
+dd{
+    font-size: 20px;;
+}
