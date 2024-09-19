@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html translate="no" lang="en">
+
+<head>
+    <title>Classification of Matter - Ayaan Raza</title>
+    <link rel="icon" href="assets/classification.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <link href="classification.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body>
+    <div class="ui sidebar inverted vertical menu">
+        <a class="item">Matter</a>
+        <a class="item">Substance</a>
+        <a class="item">Element</a>
+        <a class="item">Metalliod (Semi-metal)</a>
+        <a class="item">Metal</a>
+        <a class="item">Nonmetal</a>
+        <a class="item">Physical Change</a>
+        <a class="item">Distillation</a>
+        <a class="item">Filtration</a>
+        <a class="item">Compound</a>
+        <a class="item">Composition</a>
+        <a class="item">Chemical Change</a>
+
+        <a class="item">Mixture</a>
+        <a class="item">Phase</a>
+        <a class="item">Heterogeneous Mixture</a>
+        <a class="item">Homogeneous Mixture</a>
+        <a class="item">Solution</a>
+
+        <a class="item">Physical Property</a>
+        <a class="item">Extensive</a>
+        <a class="item">Intensive</a>
+        <a class="item">Density</a>
+        <a class="item">Ductile</a>
+        <a class="item">Malleability</a>
+        <a class="item">Solid</a>
+        <a class="item">Liquid</a>
+        <a class="item">Gas</a>
+        <a class="item">Vapor</a>
+
+        <a class="item">Chemical Property</a>
+        <a class="item">Volume</a>
+        <a class="item">Mass</a>
+        <a class="item">Law of Conservation of Mass</a>
+        <a class="item">Reactant</a>
+        <a class="item">Chemical Change</a>
+        <a class="item">Chemical Reaction</a>
+        <a class="item">Precipitate</a>
+        <a class="item">Product</a>
+
+    </div>
+    <div class="main_header">
+        <h2 style="font-size: 60px; padding-left: 50px; padding-top: 10px; margin: 0; display: inline-block;">
+            Classification of Matter
+        </h2>
+        <h2
+            style="font-size: 25px; padding-left: 20px; padding-top: 10px; margin: 0; display: inline-block; color: lightgray;">
+            by Ayaan Raza</h2>
+        <a href="..\index.html"><img src="..\general_assets\home.png" class="header-image"></a>
+        <a href="https://github.com/AyaanARaza/HemophiliaBWebsite"><img src="..\general_assets\github.png"
+                class="header-image"></a>
+        <img src="assets/side.png" id="toggle-button" class="header-image">
+    </div>
+
+
+
+    <div class="pusher">
+        <div class="ui basic segment">
+            <h1 style="font-size: 40px;">Classification of Matter Chart</h1>
+            <h1>Use the side bar to look up certain term definitions</h1>
+            <br><img src="assets/chart.png" class="ui centered rounded medium image"
+                style="border: 4px; border-style: solid; border-color: #33492B; text-align: center; width: 90%;">
+        </div>
+    </div>
+
+    <div style="color: white; background-color: black;">
+        &copy; <span id="copyright">
+            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span>
+        Ayaan Raza
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#toggle-button').on('click', function () {
+                $('.ui.sidebar').sidebar('toggle');
+            });
+        });
+        function handleClick(text) {
+            window.location.href = `term.html?word=${encodeURIComponent(text)}`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.item').forEach(item => {
+                item.addEventListener('click', () => handleClick(item.innerHTML));
+            });
+        });
+    </script>
+</body>
+
+</html>

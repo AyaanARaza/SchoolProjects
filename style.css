@@ -1,0 +1,30 @@
+.main_header {
+    background-color: #808080;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.main_header img {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 75px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.fit {
+    margin-top: 20px;
+    margin-left: 22%;
+    
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #D3D3D3;
+}
+
+
+
