@@ -159,12 +159,24 @@
         </div>
         <br><br>
     </div>
-    <div style="color: white; background-color: black;">
+    <footer style="
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+  z-index: 1000;
+">
         &copy; <span id="copyright">
-            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-        </span>
-        Ayaan Raza
-    </div>
+            <script>
+                document.getElementById('copyright').appendChild(
+                    document.createTextNode(new Date().getFullYear())
+                );
+            </script>
+        </span> Ayaan Raza
+    </footer>
 </body>
 
 </html>
