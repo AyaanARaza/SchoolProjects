@@ -1,7 +1,0 @@
-Information Links:
-    - https://www.ncbi.nlm.nih.gov/books/NBK560792/#article-22744.s8
-    - https://www.healthline.com/health/hemophilia-a/hemophilia-life-expectancy#causes-of-death
-
-Modules Used:
-    - Semantic UI
-    - Chatbase
